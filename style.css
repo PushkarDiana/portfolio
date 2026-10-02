@@ -2095,3 +2095,39 @@ body {
 section[id] {
   scroll-margin-top: 70px;
 }
+
+/* Адаптив для мобильных устройств  */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 1.8rem;
+    line-height: 1.25;
+  }
+
+  .typewriter {
+    white-space: normal !important;
+    border-right: none !important;
+    width: auto !important;
+    animation: none !important;
+  }
+
+  .hero-title .highlight {
+    display: inline;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  /* Делаем сами кнопки узкими по содержимому */
+  .hero-actions .btn {
+    height: auto;
+    padding: 8px 14px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    flex: 0 1 auto;
+  }
+}
