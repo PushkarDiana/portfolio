@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Lumina Living — Проект Портфолио</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap"
+        rel="stylesheet">
+    <!-- Fancybox CSS (модальное окно для просмотра картинок) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project.css">
+
+</head>
+
+<body>
+    <!-- Фоновые эффекты -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo logo-avatar">
+                <div class="logo-avatar-wrapper">
+                    <div class="logo-monogram">DP</div>
+                    <span class="logo-status-dot"></span>
+                </div>
+                <span class="logo-name">Diana<span class="logo-tag">.developer</span></span>
+            </a>
+
+            <div class="nav-actions">
+                <a href="index.html#projects" class="btn btn-secondary btn-sm">
+                    &larr; Вернуться на главную
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="project-page">
+        <div class="container fade-in show">
+
+            <!-- Заголовок проекта -->
+            <div class="project-page-header">
+                <span class="project-category">WEB DEVELOPMENT / FRONT-END & UI/UX</span>
+                <h1 class="project-page-title">Интернет-магазин «Lumina Living»</h1>
+
+                <!-- Мета-данные в блоке -->
+                <div class="project-meta-grid">
+                    <div class="meta-item">
+                        <strong>Профиль:</strong>
+                        <span>Web Development & Design</span>
+                    </div>
+                    <div class="meta-item">
+                        <strong>Технологии:</strong>
+                        <span>HTML5, CSS3, JS (ES6+), C#, SQL</span>
+                    </div>
+                    <div class="meta-item">
+                        <strong>Сфера:</strong>
+                        <span>Дизайнерская мебель и декор</span>
+                    </div>
+                </div>
+                <div class="project-header-actions">
+                    <a href="https://github.com/PushkarDiana/lumina-living" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" aria-hidden="true">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                        Посмотреть код на GitHub
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Основная сетка: Описание + Сайдбар -->
+            <div class="project-content-grid">
+
+                <!-- Левая колонка -->
+                <div class="main-info">
+                    <section class="project-section">
+                        <h2>Описание проекта и задачи</h2>
+                        <p><strong>«Lumina Living»</strong> — это концептуальный интернет-магазин дизайнерской мебели,
+                            освещения и предметов декора. Проект разработан с акцентом на современную минималистичную
+                            эстетику, продуманный UI/UX и полноценную интерактивность интерфейса без использования
+                            сторонних
+                            тяжелых фреймворков.</p>
+                    </section>
+
+                    <section class="project-section">
+                        <h2>Ключевой функционал</h2>
+                        <ul class="feature-checklist">
+                            <li><strong>Интерактивный каталог:</strong> Динамическая сортировка и фильтрация товаров по
+                                категориям в режиме реального времени.</li>
+                            <li><strong>Быстрый просмотр:</strong> Модальное окно с экспресс-карточкой
+                                товара
+                                для удобного ознакомления.</li>
+                            <li><strong>Страница товара:</strong> Подробное описание изделий с техническими
+                                характеристиками
+                                и условиями доставки.</li>
+                            <li><strong>Корзина и Избранное:</strong> Выезжающие боковые панели (Drawer) с пересчетом
+                                итоговой стоимости.</li>
+                            <li><strong>Модальные окна:</strong> Живой поиск по каталогу и форма авторизации/регистрации
+                                пользователя.</li>
+                            <li><strong>Личный кабинет:</strong> Просмотр истории заказов и возможность редактирования
+                                профиля.</li>
+                        </ul>
+                    </section>
+                </div>
+
+                <!-- Правая колонка (Сайдбар) -->
+                <aside class="project-sidebar">
+                    <div class="card sidebar-card">
+                        <h3>Архитектура и Стек</h3>
+                        <p>Веб-приложение с разделением логики обработки данных, базы данных и интерфейса.</p>
+
+                        <div class="sidebar-tech-list">
+                            <div class="tech-item">
+                                <strong>Язык и Бэкенд:</strong> C#, JS
+                            </div>
+                            <div class="tech-item">
+                                <strong>База данных:</strong> MS SQL Server
+                            </div>
+                            <div class="tech-item">
+                                <strong>Фронтенд и Стили:</strong> HTML5 / CSS3
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card sidebar-card contact-cta">
+                        <h3>Нужна похожая система?</h3>
+                        <p>Готова обсудить разработку веб-проекта или сервиса под задачи вашего бизнеса.</p>
+                        <a href="index.html#contact" class="btn btn-secondary btn-block">Связаться со мной</a>
+                    </div>
+                </aside>
+
+            </div>
+
+            <!-- Галерея интерфейсов -->
+            <section class="project-section project-gallery-section">
+                <h2>Галерея интерфейса</h2>
+                <div class="project-gallery">
+
+                    <div class="gallery-item">
+                        <a href="images/Снимок экрана (326).png" data-fancybox="gallery"
+                            data-caption="Главный экран: промо-блок новой коллекции и навигация сайта">
+                            <img src="images/Снимок экрана (326).png" alt="Главный экран Lumina Living">
+                        </a>
+                        <p class="gallery-caption">Главный экран</p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <a href="images/Снимок экрана (327).png" data-fancybox="gallery"
+                            data-caption="Блок «Новинки коллекции» с интерактивными карточками товаров">
+                            <img src="images/Снимок экрана (327).png" alt="Новинки коллекции">
+                        </a>
+                        <p class="gallery-caption">Новинки коллекции</p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <a href="images/Снимок экрана (328).png" data-fancybox="gallery"
+                            data-caption="Информационный блок «О бренде Lumina» с ключевыми преимуществами">
+                            <img src="images/Снимок экрана (328).png" alt="Раздел О бренде">
+                        </a>
+                        <p class="gallery-caption">Раздел «О бренде»</p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <a href="images/Снимок экрана (329).png" data-fancybox="gallery"
+                            data-caption="Каталог товаров: фильтрация по категориям и карточки с бейджами">
+                            <img src="images/Снимок экрана (329).png" alt="Каталог товаров">
+                        </a>
+                        <p class="gallery-caption">Каталог товаров</p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <a href="images/Снимок экрана (330).png" data-fancybox="gallery"
+                            data-caption="Форма обратной связи и контактная информация компании">
+                            <img src="images/Снимок экрана (330).png" alt="Контакты и форма обратной связи">
+                        </a>
+                        <p class="gallery-caption">Контакты и обратная связь</p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <a href="images/Снимок экрана (331).png" data-fancybox="gallery"
+                            data-caption="Модальное окно живого поиска товаров по названию и категориям">
+                            <img src="images/Снимок экрана (331).png" alt="Поиск по сайту">
+                        </a>
+                        <p class="gallery-caption">Поиск по сайту</p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <a href="images/Снимок экрана (333).png" data-fancybox="gallery"
+                            data-caption="Боковая панель «Избранное» с сохраненными товарами">
+                            <img src="images/Снимок экрана (333).png" alt="Панель «Избранное»">
+                        </a>
+                        <p class="gallery-caption">Боковая панель «Избранное»</p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <a href="images/Снимок экрана (334).png" data-fancybox="gallery"
+                            data-caption="Выезжающая корзина покупок с подсчетом итоговой стоимости">
+                            <img src="images/Снимок экрана (334).png" alt="Корзина покупок">
+                        </a>
+                        <p class="gallery-caption">Выезжающая корзина</p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <a href="images/Снимок экрана (335).png" data-fancybox="gallery"
+                            data-caption="Модальное окно авторизации и входа в аккаунт">
+                            <img src="images/Снимок экрана (335).png" alt="Форма входа в аккаунт">
+                        </a>
+                        <p class="gallery-caption">Форма входа в аккаунт</p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <a href="images/Снимок экрана (336).png" data-fancybox="gallery"
+                            data-caption="Личный кабинет пользователя: история заказов и их статусы">
+                            <img src="images/Снимок экрана (336).png" alt="Личный кабинет и история заказов">
+                        </a>
+                        <p class="gallery-caption">Личный кабинет</p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <a href="images/Снимок экрана (337).png" data-fancybox="gallery"
+                            data-caption="Настройки аккаунта: редактирование личных данных и смена пароля">
+                            <img src="images/Снимок экрана (337).png" alt="Настройки профиля">
+                        </a>
+                        <p class="gallery-caption">Настройки профиля</p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <a href="images/Снимок экрана (338).png" data-fancybox="gallery"
+                            data-caption="Модальное окно быстрого просмотра товара (Quick View)">
+                            <img src="images/Снимок экрана (338).png" alt="Быстрый просмотр товара">
+                        </a>
+                        <p class="gallery-caption">Быстрый просмотр товара</p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <a href="images/Снимок экрана (341).png" data-fancybox="gallery"
+                            data-caption="Детальная страница товара: фотогалерея, характеристики, условия доставки и гарантии">
+                            <img src="images/Снимок экрана (341).png" alt="Страница товара">
+                        </a>
+                        <p class="gallery-caption">Страница товара</p>
+                    </div>
+                </div>
+            </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>© Диана Пушкар. C# Developer &amp; Web Developer.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+            // Настройки галереи
+        });
+    </script>
+</body>
+
+</html>

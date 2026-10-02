@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ИС Складского Учета — Проект | Диана Пушкар</title>
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap"
+        rel="stylesheet">
+    <!-- Fancybox CSS (модальное окно для просмотра картинок) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project.css"> 
+
+</head>
+
+<body>
+
+    <!-- Фоновые эффекты -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo logo-avatar">
+                <div class="logo-avatar-wrapper">
+                    <div class="logo-monogram">DP</div>
+                    <span class="logo-status-dot"></span>
+                </div>
+                <span class="logo-name">Diana<span class="logo-tag">.developer</span></span>
+            </a>
+
+            <div class="nav-actions">
+                <a href="index.html#projects" class="btn btn-secondary btn-sm">
+                    &larr; Вернуться на главную
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="project-page">
+        <div class="container fade-in show">
+
+            <!-- Заголовок проекта -->
+            <div class="project-page-header">
+                <span class="project-category">Desktop Application / C# &amp; WPF</span>
+                <h1 class="project-page-title">Информационная система складского учета товарно-материальных ценностей
+                </h1>
+
+                <div class="project-meta-grid">
+                    <div class="meta-item">
+                        <strong>Профиль:</strong>
+                        <span>Десктопная разработка (C# / WPF)</span>
+                    </div>
+                    <div class="meta-item">
+                        <strong>Технологии:</strong>
+                        <span>C#, WPF (.NET Framework), MS SQL Server, Entity Framework</span>
+                    </div>
+                    <div class="meta-item">
+                        <strong>Сфера:</strong>
+                        <span>Автоматизация бизнеса / Строительство</span>
+                    </div>
+                </div>
+
+                <div class="project-header-actions">
+                    <a href="https://github.com/PushkarDiana/kvaternion" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" aria-hidden="true">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                        Посмотреть код на GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Двухколоночный макет  -->
+            <div class="project-content-grid">
+
+                <!-- Левая колонка: описание и функционал -->
+                <div class="project-main-info">
+                    <section class="project-section">
+                        <h2>Описание проблемы и задачи</h2>
+                        <p>
+                            В строительной компании учет материалов и инструмента на складе велся вручную или с
+                            использованием несогласованных таблиц. Это приводило к задержкам при отгрузках, неточностям
+                            в остатках и отсутствии быстрой аналитики по движению ТМЦ.
+                        </p>
+                        <p>
+                            <strong>Цель проекта:</strong> Разработать надежное десктопное приложение для автоматизации
+                            складских операций, контроля остатков в реальном времени и генерации отчетов.
+                        </p>
+                    </section>
+
+                    <section class="project-section">
+                        <h2>Реализованный функционал</h2>
+                        <ul class="feature-checklist">
+                            <li><strong>Учет материалов и категорий:</strong> ведение номенклатуры, отслеживание
+                                минимальных остатков.</li>
+                            <li><strong>Документооборот:</strong> оформление приходных и расходных накладных, актов
+                                списания.</li>
+                            <li><strong>Ролевая система доступа:</strong> разграничение прав (Администратор — управление
+                                доступом, Кладовщик — проведение документов).</li>
+                            <li><strong>Поиск и фильтрация:</strong> быстрая сортировка по поставщикам, объектам
+                                строительства и датам.</li>
+                            <li><strong>Аналитические отчеты:</strong> автоматическое формирование ведомостей движения
+                                материалов.</li>
+                        </ul>
+                    </section>
+                </div>
+
+                <!-- Правая колонка: Архитектура и Текстек -->
+                <aside class="project-sidebar">
+                    <div class="card sidebar-card">
+                        <h3>Архитектура и Базы Данных</h3>
+                        <p>Приложение спроектировано с разделением на слои (UI, Business Logic, Data Access).</p>
+
+                        <div class="sidebar-tech-list">
+                            <div class="tech-item">
+                                <strong>UI:</strong> WPF / XAML
+                            </div>
+                            <div class="tech-item">
+                                <strong>Бэкенд:</strong> C# / .NET Framework
+                            </div>
+                            <div class="tech-item">
+                                <strong>БД:</strong> MS SQL Server
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card sidebar-card contact-cta">
+                        <h3>Нужна похожая система?</h3>
+                        <p>Готова обсудить разработку ПО под задачи вашего бизнеса.</p>
+                        <a href="index.html#contact" class="btn btn-secondary btn-block">Связаться со мной</a>
+                    </div>
+                </aside>
+
+            </div> 
+
+            <!-- СЕКЦИЯ ГАЛЕРЕИ-->
+            <section class="project-section project-gallery-section">
+                <h2>Галерея интерфейса</h2>
+                <div class="project-gallery">
+
+                    <div class="gallery-item">
+                        <a href="images/Снимок экрана (112).png" data-fancybox="gallery"
+                            data-caption="Форма входа в систему: авторизация пользователей и разграничение прав доступа">
+                            <img src="images/Снимок экрана (112).png" alt="Форма входа в систему">
+                        </a>
+                        <p class="gallery-caption">Форма входа в систему</p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <a href="images/Снимок экрана (115).png" data-fancybox="gallery"
+                            data-caption="Главный дашборд: ключевые показатели и навигация">
+                            <img src="images/Снимок экрана (115).png" alt="Главная панель управления">
+                        </a>
+                        <p class="gallery-caption">Главная панель управления</p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <a href="images/Снимок экрана (116).png" data-fancybox="gallery"
+                            data-caption="Реестр товарно-материальных ресурсов и остатков">
+                            <img src="images/Снимок экрана (116).png" alt="Раздел учета ТМР">
+                        </a>
+                        <p class="gallery-caption">Раздел учета ТМР</p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <a href="images/Снимок экрана (118).png" data-fancybox="gallery"
+                            data-caption="Управление строительными объектами и местами хранения">
+                            <img src="images/Снимок экрана (118).png" alt="Карточки объектов и складов">
+                        </a>
+                        <p class="gallery-caption">Объекты и склады</p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <a href="images/Снимок экрана (120).png" data-fancybox="gallery"
+                            data-caption="Журнал поступлений, выдач и внутренних перемещений">
+                            <img src="images/Снимок экрана (120).png" alt="Журнал учета движений ТМР">
+                        </a>
+                        <p class="gallery-caption">Журнал учета движений ТМР</p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <a href="images/Снимок экрана (122).png" data-fancybox="gallery"
+                            data-caption="Аналитика, наглядные диаграммы и отчетность">
+                            <img src="images/Снимок экрана (122).png" alt="Раздел аналитики">
+                        </a>
+                        <p class="gallery-caption">Раздел аналитики</p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <a href="images/Снимок экрана (123).png" data-fancybox="gallery"
+                            data-caption="Администрирование пользователей и ролей">
+                            <img src="images/Снимок экрана (123).png" alt="Список пользователей">
+                        </a>
+                        <p class="gallery-caption">Управление пользователями</p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <a href="images/Снимок экрана (124).png" data-fancybox="gallery"
+                            data-caption="Личный кабинет пользователя и настройки профиля">
+                            <img src="images/Снимок экрана (124).png" alt="Личный кабинет">
+                        </a>
+                        <p class="gallery-caption">Личный кабинет</p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <a href="images/Снимок экрана (125).png" data-fancybox="gallery"
+                            data-caption="Информационное окно «О системе»">
+                            <img src="images/Снимок экрана (125).png" alt="О программе">
+                        </a>
+                        <p class="gallery-caption">О системе</p>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© Диана Пушкар. C# Developer &amp; Web Developer.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+            // Настройки галереи
+        });
+    </script>
+</body>
+
+</html>

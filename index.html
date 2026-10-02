@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Диана | Веб-сайты под ключ &amp; ИС на C#</title>
+    <title>Диана Пушкар | Разработка сайтов &amp; ИС на C#</title>
+    <title>Диана Пушкар | Разработка сайтов &amp; ИС на C#</title>
+    <meta name="description" content="Портфолио Дианы Пушкар: разработка веб-сайтов и информационных систем.">
+
+    <!-- Иконки для вкладки браузера и Apple -->
+    <link rel="icon" href="images/og-cover.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/og-cover.png">
+
+    <!-- Open Graph (для Telegram, VK, WhatsApp, LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pushkardiana.github.io/portfolio/">
+    <meta property="og:title" content="Диана Пушкар | Web Development &amp; C# Systems">
+    <meta property="og:description"
+        content="Портфолио веб-разработчика и C# специалиста. Готовые кейсы, стек технологий и контакты.">
+    <meta property="og:image" content="https://pushkardiana.github.io/portfolio/images/og-cover.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Фоновые эффекты -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo logo-avatar">
+                <div class="logo-avatar-wrapper">
+                    <div class="logo-monogram">DP</div>
+                    <span class="logo-status-dot"></span>
+                </div>
+                <span class="logo-name">Diana<span class="logo-tag">.developer</span></span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Открыть меню">
+                <span class="hamburger"></span>
+            </button>
+
+            <!-- Ссылки навигации -->
+            <div class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link">Обо мне</a>
+                <a href="#skills" class="nav-link">Навыки</a>
+                <a href="#workflow" class="nav-link">Процесс</a>
+                <a href="#services" class="nav-link">Специализация</a>
+                <a href="#projects" class="nav-link">Проекты</a>
+                <a href="#contact" class="nav-link">Контакты</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ТЕМНЫЙ ФОН -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- 1. HERO SECTION -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="pulse-dot"></span> Открыта к заказам и проектам
+                </div>
+
+                <h1 class="hero-title">
+                    <span class="typewriter line1">
+                        <span class="highlight">Веб-сайты</span> под ключ
+                    </span>
+                    <br>
+                    <span class="typewriter line2">
+                        <span class="highlight">ИС</span> на C#
+                    </span>
+                </h1>
+
+                <p class="hero-description">
+                    Привет! Я <strong>Диана</strong>. Разрабатываю современные, быстрые и адаптивные веб-сайты
+                    под ключ на HTML, CSS, JavaScript, а также создаю надежное ИС и бэкенд-логику на C# и SQL. Помогаю
+                    воплотить вашу идею в готовый продукт!
+                </p>
+
+                <div class="hero-tech-stack">
+                    <span class="tech-tag tag-main">HTML / CSS</span>
+                    <span class="tech-tag tag-main">JavaScript</span>
+                    <span class="tech-tag tag-sub">C# / .NET</span>
+                    <span class="tech-tag tag-sub">MS SQL</span>
+                    <span class="tech-tag tag-main">Web Design</span>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">Смотреть проекты</a>
+                    <a href="#contact" class="btn btn-secondary">Обсудить проект</a>
+                </div>
+            </div>
+
+            <!-- Интерактивная карточка кода -->
+            <div class="hero-interactive" id="hero3dCard">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                        <div class="window-title">App.cs &amp; index.html — Developer Tools</div>
+                    </div>
+
+                    <div class="window-body">
+                        <div class="code-line"><span class="c-tag">&lt;section</span> <span
+                                class="c-attr">class</span>=<span class="c-str">"web-app"</span><span
+                                class="c-tag">&gt;</span></div>
+                        <div class="code-line indent-1"><span class="c-tag">&lt;h1&gt;</span><span class="c-txt">Сайты
+                                под ключ</span><span class="c-tag">&lt;/h1&gt;</span></div>
+                        <div class="code-line indent-1"><span class="c-keyword">const</span> <span
+                                class="c-var">webStack</span> = [<span class="c-str">'HTML'</span>, <span
+                                class="c-str">'CSS'</span>, <span class="c-str">'JS'</span>];</div>
+                        <div class="code-line"><span class="c-tag">&lt;/section&gt;</span></div>
+
+                        <div class="code-line"
+                            style="margin: 8px 0; opacity: 0.3; border-top: 1px dashed currentColor;"></div>
+
+                        <div class="code-line"><span class="c-keyword">public class</span> <span
+                                class="c-txt">Software</span> {</div>
+                        <div class="code-line indent-1"><span class="c-keyword">public void</span> <span
+                                class="c-var">BuildSystem</span>() =&gt; <span class="c-str">"C# &amp; SQL"</span>;
+                        </div>
+                        <div class="code-line">}</div>
+                    </div>
+                </div>
+
+                <div class="floating-badge badge-top">✦ Web (HTML / CSS / JS)</div>
+                <div class="floating-badge badge-bottom">⚡ C# Desktop &amp; SQL</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. ОБО МНЕ -->
+    <section id="about" class="section section-alt">
+        <div class="container fade-in">
+            <h2 class="section-title">Обо мне</h2>
+
+            <div class="card about-card">
+                <div class="about-grid">
+                    <div class="about-avatar-container">
+                        <div class="avatar-3d-card" id="avatarCard">
+                            <div class="avatar-glow"></div>
+                            <img src="images/avatar_3d_final.png" alt="3D аватар Дианы" class="avatar-3d-img">
+                            <div class="avatar-shadow"></div>
+                        </div>
+
+                        <div class="float-badge badge-top-left">🌐 Web (HTML / CSS / JS)</div>
+                        <div class="float-badge badge-bottom-right">⚡ C# &amp; MS SQL</div>
+                    </div>
+
+                    <div class="about-info">
+                        <h3>Диана Пушкар</h3>
+                        <p class="about-subtitle">Web Developer &amp; C# Specialist | Разработка сайтов под ключ и ИС
+                        </p>
+
+                        <p class="about-bio">
+                            Я специализируюсь на создании современных, быстрых и адаптивных веб-сайтов от идеи до
+                            полного запуска, а также на разработке надежного программного обеспечения. Мой подход
+                            объединяет продуманный UI/UX дизайн, чистую верстку и системную архитектуру баз данных.
+                        </p>
+
+                        <div class="about-details-grid">
+                            <div class="detail-item">
+                                <strong>Образование:</strong>
+                                <span>СПО &amp; Бакалавриат (Информационные системы и программирование)</span>
+                            </div>
+                            <div class="detail-item">
+                                <strong>Направления работы:</strong>
+                                <span>Разработка веб-сайтов от А до Я, проектирование БД, автоматизация процессов и
+                                    создание ИС на C#.</span>
+                            </div>
+                            <div class="detail-item">
+                                <strong>Сильные стороны:</strong>
+                                <span>Внимание к деталям интерфейса, чистый код, аналитический подход и ориентация на
+                                    результат.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. НАВЫКИ / ТЕХНИЧЕСКИЙ СТЕК -->
+    <section id="skills" class="section">
+        <div class="container fade-in">
+            <h2 class="section-title">Технический стек</h2>
+            <div class="skills-grid">
+
+                <!-- Карточка 4: Web Frontend -->
+                <div class="card skill-card">
+                    <div class="card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6" />
+                            <polyline points="8 6 2 12 8 18" />
+                        </svg>
+                    </div>
+                    <h3>Web Frontend</h3>
+                    <p>HTML5, CSS3, JavaScript, верстка сайтов, скрипты, анимации и адаптация под любые устройства.</p>
+                </div>
+
+                <!-- Карточка 1: C# & Desktop -->
+                <div class="card skill-card">
+                    <div class="card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" />
+                            <line x1="8" y1="21" x2="16" y2="21" />
+                            <line x1="12" y1="17" x2="12" y2="21" />
+                            <polyline points="7 8 10 11 7 14" />
+                            <line x1="13" y1="14" x2="17" y2="14" />
+                        </svg>
+                    </div>
+                    <h3>C# &amp; Desktop</h3>
+                    <p>C#, .NET Framework, WPF, разработка десктопных приложений, ООП и архитектура ИС.</p>
+                </div>
+                <!-- Карточка 2: Базы данных -->
+                <div class="card skill-card">
+                    <div class="card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <ellipse cx="12" cy="5" rx="9" ry="3" />
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                        </svg>
+                    </div>
+                    <h3>Базы данных</h3>
+                    <p>MS SQL Server, проектирование ER-диаграмм, написание SQL-запросов и хранимых процедур.</p>
+                </div>
+
+                <!-- Карточка 3: UI/UX Design (Figma) -->
+                <div class="card skill-card">
+                    <div class="card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z" />
+                            <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z" />
+                            <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z" />
+                            <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z" />
+                            <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z" />
+                        </svg>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Проектирование пользовательских интерфейсов в Figma, прототипирование и разработка полиграфии.
+                    </p>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. ПРОЦЕСС РАЗРАБОТКИ (Интерактивный слайдер) -->
+    <section id="workflow" class="section section-alt fade-in">
+        <div class="container">
+            <h2 class="section-title">Как я работаю</h2>
+
+            <div class="workflow-steps">
+                <!-- Шаг 1 -->
+                <div class="step-card">
+                    <span class="step-num">01</span>
+                    <h3>Анализ и требования</h3>
+                    <p class="step-desc">Изучаю задачу, целевую аудиторию и формализую требования.</p>
+                    <ul class="step-list">
+                        <li>Сбор бизнес-требований</li>
+                        <li>Анализ процессов</li>
+                        <li>Формирование ТЗ и подбор стека</li>
+                    </ul>
+                </div>
+
+                <div class="step-arrow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </div>
+
+                <!-- Шаг 2 -->
+                <div class="step-card">
+                    <span class="step-num">02</span>
+                    <h3>Проектирование</h3>
+                    <p class="step-desc">Создаю архитектуру и макеты интерфейса до написания кода.</p>
+                    <ul class="step-list">
+                        <li>Обсуждение макетов и прототипов </li>
+                        <li>Моделирование структуры данных</li>
+                        <li>Визуализация процессов</li>
+                    </ul>
+                </div>
+
+                <div class="step-arrow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </div>
+
+                <!-- Шаг 3 -->
+                <div class="step-card">
+                    <span class="step-num">03</span>
+                    <h3>Разработка</h3>
+                    <p class="step-desc">Превращаю спроектированную модель в готовое решение.</p>
+                    <ul class="step-list">
+                        <li>Чистая клиентская и серверная логика</li>
+                        <li>Верстка интерфейса и настройка</li>
+                        <li>Интеграция с базами данных</li>
+                    </ul>
+                </div>
+
+                <div class="step-arrow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </div>
+
+                <!-- Шаг 4 -->
+                <div class="step-card">
+                    <span class="step-num">04</span>
+                    <h3>Тестирование и запуск</h3>
+                    <p class="step-desc">Проверяю корректность работы и довожу проект до идеала.</p>
+                    <ul class="step-list">
+                        <li>Отладка логики и данных</li>
+                        <li>Тестирование на устройствах</li>
+                        <li>Оптимизация</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. ЧЕМ МОГУ БЫТЬ ПОЛЕЗНА -->
+    <section id="services" class="section">
+        <div class="container fade-in">
+            <h2 class="section-title">Моя специализация</h2>
+
+            <div class="services-grid">
+
+                <!-- Карточка 1A: Простые сайты и Landing Page -->
+                <div class="service-card card">
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3>Простые сайты</h3>
+                    <p>Создание адаптивных одностраничников, сайтов-визиток и многостраничных промо-сайтов с
+                        современными анимациями, интерактивным JS и чистой версткой.</p>
+                    <div class="service-meta">
+                        <span class="service-price">от 15 000 ₽</span>
+                        <span class="service-time">⏱ 5-7 дней</span>
+                    </div>
+                </div>
+
+                <!-- Карточка 1B: Сайты с БД и веб-сервисы -->
+                <div class="service-card card">
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                        </svg>
+                    </div>
+                    <h3>Веб-сайты с базой данных</h3>
+                    <p>Разработка полнофункциональных веб-систем: проектирование баз данных (SQL Server), интеграция
+                        API, формы авторизации, личные кабинеты и панель управления.</p>
+                    <div class="service-meta">
+                        <span class="service-price">от 30 000 ₽</span>
+                        <span class="service-time">⏱ от 10-16 дней</span>
+                    </div>
+                </div>
+
+                <!-- Карточка 2 -->
+                <div class="service-card card">
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Разработка ИС на C# / WPF приложений</h3>
+                    <p>Создание десктопного ИС с нуля: проектирование архитектуры, написание чистой логики, построение
+                        интерфейса и связывание с базой данных.</p>
+                    <div class="service-meta">
+                        <span class="service-price">от 45 000 ₽</span>
+                        <span class="service-time">⏱ от 20-30 дней</span>
+                    </div>
+                </div>
+
+                <!-- Карточка 3 -->
+                <div class="service-card card">
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"></path>
+                            <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"></path>
+                            <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"></path>
+                            <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"></path>
+                            <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"></path>
+                        </svg>
+                    </div>
+                    <h3>Прототипирование в Figma и UI/UX</h3>
+                    <p>Проектирование UI/UX для веб- и десктопных приложений в Figma. Разработка полиграфии (листовки,
+                        брошюры, буклеты) и рекламных материалов.</p>
+                    <div class="service-meta">
+                        <span class="service-price">от 1 500 ₽</span>
+                        <span class="service-time">⏱ от 3 дней</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. ПРОЕКТЫ  -->
+    <section id="projects" class="section section-alt">
+        <div class="container fade-in">
+            <h2 class="section-title">Проекты</h2>
+
+            <div class="projects-list">
+                <!-- Проект 1  -->
+                <article class="project-item card">
+                    <div class="project-preview">
+                        <div class="preview-badge">WPF / MS SQL</div>
+                        <a href="project-warehouse.html" class="project-preview-link">
+                            <img src="images/Снимок экрана (115).png" alt="Дашборд ИС Складского учета"
+                                class="project-preview-img">
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Desktop Application / C# &amp; WPF</span>
+                        <h3>ИС Складского Учета «Kvaternion Warehouse»</h3>
+                        <p>Десктопная система для автоматизации учета материалов на складе, управления накладными и
+                            формирования аналитической отчетности.</p>
+
+                        <div class="project-tags">
+                            <span class="tag">C#</span>
+                            <span class="tag">WPF</span>
+                            <span class="tag">MS SQL Server</span>
+                            <span class="tag">Entity Framework</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="project-warehouse.html" class="btn btn-primary btn-sm">
+                                Подробнее о проекте &rarr;
+                            </a>
+                            <a href="https://github.com/PushkarDiana/kvaternion" target="_blank"
+                                rel="noopener noreferrer" class="btn-link">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Проект 2: E-Commerce Lumina Living -->
+                <article class="project-item card">
+                    <div class="project-preview">
+                        <div class="preview-badge">HTML / CSS / JS / C# / SQL</div>
+                        <a href="project-lumina.html" class="project-preview-link">
+                            <img src="images/Снимок экрана (326).png" alt="Интернет-магазин Lumina Living"
+                                class="project-preview-img">
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Web Development & UI/UX Design</span>
+                        <h3>Интернет-магазин «Lumina Living»</h3>
+                        <p>Адаптивный концепт интернет-магазина дизайнерской мебели и декора с динамической корзиной,
+                            избранным, фильтрацией товаров и личным кабинетом.</p>
+
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">UI/UX Design</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">MS SQL Server</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="project-lumina.html" class="btn btn-primary btn-sm">
+                                Подробнее о проекте &rarr;
+                            </a>
+                            <a href="https://github.com/PushkarDiana/lumina-living" target="_blank"
+                                rel="noopener noreferrer" class="btn-link">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Проект 3 (ARMORTECH) -->
+                <article class="project-item card">
+                    <div class="project-preview">
+                        <div class="preview-badge">HTML / CSS / JS </div>
+                        <img src="images/Снимок экрана (359).png" alt="Превью ARMORTECH" class="project-preview-img">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Web Development &amp; Service</span>
+                        <h3>Детейлинг студия «Armortech» </h3>
+                        <p>Интерактивный веб-сайт с калькулятором стоимости услуг, слайдером сравнения ЛКП «До / После»,
+                            модальным окном записи и фильтрацией портфолио.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5/CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">UI/UX</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="project-armortech.html" class="btn btn-primary btn-sm">
+                                Подробнее о проекте &rarr;
+                            </a>
+                            <a href="https://github.com/PushkarDiana/Armortech" target="_blank"
+                                rel="noopener noreferrer" class="btn-link">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. КОНТАКТЫ -->
+    <section id="contact" class="section">
+        <div class="container contact-container fade-in">
+            <h2 class="section-title">Связаться со мной</h2>
+            <div class="card contact-card">
+                <p>Открыта к предложениям по работе, стажировкам и интересным проектам. Напишите мне в удобном
+                    мессенджере или по почте:</p>
+                <div class="social-links">
+                    <a href="https://t.me/dia_nka02" target="_blank" class="social-btn">Telegram</a>
+                    <a href="https://t.me/DanilTenar" class="social-btn">Telegram менеджера</a>
+                    <a href="https://github.com/PushkarDiana" target="_blank" class="social-btn">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <p>© Диана Пушкар. Разработано с использованием HTML, CSS и JS.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
